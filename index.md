@@ -67,9 +67,9 @@ Hi! My name is Aarnav
             2. Control Structures
         </div>
     </a>
-    <a href="#" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/Data-Types" style="text-decoration: none;">
         <div style="background-color: #DAF7A6; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            3. Math & Physics
+            3. Data Types
         </div>
     </a>
     <a href="#" style="text-decoration: none;">
