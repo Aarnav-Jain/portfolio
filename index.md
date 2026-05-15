@@ -51,3 +51,31 @@ Hi! My name is Aarnav
 </div>
 
 <br>
+
+### Final Exam: Game Dev Topics
+
+> Click each topic to view my detailed understanding and code demonstrations for the final project.
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="#" style="text-decoration: none;">
+        <div style="background-color: #FF5733; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            1. OOP Architecture
+        </div>
+    </a>
+    <a href="#" style="text-decoration: none;">
+        <div style="background-color: #FFC300; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            2. Logic & Data
+        </div>
+    </a>
+    <a href="#" style="text-decoration: none;">
+        <div style="background-color: #DAF7A6; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            3. Math & Physics
+        </div>
+    </a>
+    <a href="#" style="text-decoration: none;">
+        <div style="background-color: #581845; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            4. Input & Canvas
+        </div>
+    </a>
+    <a href="#" style="text-decoration: none;">
+        <div style="background-color: #2E86C1; color: white;
