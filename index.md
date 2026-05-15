@@ -52,7 +52,7 @@ Hi! My name is Aarnav
 
 <br>
 
-### Final Exam: Game Dev Topics
+### College Ready
 
 > Click each topic to view my detailed understanding and code demonstrations for the final project.
 
@@ -74,21 +74,12 @@ Hi! My name is Aarnav
     </a>
     <a href="#" style="text-decoration: none;">
         <div style="background-color: #581845; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            4. Input & Canvas
+            4. 
         </div>
     </a>
 </div>
 
 <br>
 
-### College Ready
 
-> Showcasing academic preparation and foundational projects.
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="#" style="text-decoration: none;">
-        <div style="background-color: #2E86C1; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            Academic Portfolio
-        </div>
-    </a>
-</div>
