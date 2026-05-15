@@ -62,9 +62,9 @@ Hi! My name is Aarnav
             1. OOP Architecture
         </div>
     </a>
-    <a href="#" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/Control-Structures" style="text-decoration: none;">
         <div style="background-color: #FFC300; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            2. Logic & Data
+            2. Control Structures
         </div>
     </a>
     <a href="#" style="text-decoration: none;">
