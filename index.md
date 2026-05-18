@@ -72,7 +72,7 @@ Hi! My name is Aarnav
             3. Data Types
         </div>
     </a>
-    <a href="#" style="text-decoration: none;">
+    <a href="{site.baseurl}}/operators" style="text-decoration: none;">
         <div style="background-color: #581845; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             4. 
         </div>
