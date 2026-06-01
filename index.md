@@ -66,45 +66,46 @@ Hi! My name is Aarnav
   justify-content: space-between;
   gap: 18px;
   padding: 18px 20px;
-  border: 1px solid rgba(17,24,39,0.12);
-  border-radius: 8px;
-  background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
-  box-shadow: 0 8px 24px rgba(17,24,39,0.06);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.04);
   cursor: pointer;
-  list-style: none; /* Hide default arrow */
+  list-style: none;
   user-select: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.25s ease;
 }
 .cr-summary::-webkit-details-marker {
-  display: none; /* Hide default arrow on Safari */
+  display: none;
 }
 .cr-summary:hover {
-  border-color: rgba(37, 99, 235, 0.4);
-  box-shadow: 0 12px 28px rgba(17,24,39,0.1);
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.08);
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
 }
 .cr-eyebrow {
   display: block;
-  margin-bottom: 5px;
-  color: #2563eb;
-  font-size: 12px;
+  margin-bottom: 4px;
+  color: #4f46e5; /* Modern Indigo */
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
 }
 .cr-lead {
   margin: 0;
-  color: #1f2937;
+  color: #334155; /* Slate 700 */
   font-size: 16px;
   line-height: 1.5;
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 600;
 }
-/* Visual arrow indicator */
 .cr-lead::after {
-  content: '▼';
-  font-size: 11px;
-  color: #2563eb;
+  content: '▾';
+  font-size: 12px;
+  color: #6366f1;
   transition: transform 0.2s ease;
 }
 details[open] .cr-lead::after {
@@ -112,76 +113,86 @@ details[open] .cr-lead::after {
 }
 .cr-count {
   flex: 0 0 auto;
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-radius: 999px;
-  background: #e0f2fe;
-  color: #075985;
-  font-size: 13px;
-  font-weight: 800;
+  background: #e0e7ff; /* Soft Indigo tint */
+  color: #4338ca;
+  font-size: 12px;
+  font-weight: 700;
 }
-/* Dropdown content menu wrapper */
 .cr-menu {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   margin-top: 8px;
-  padding: 6px;
+  padding: 8px;
   background: #ffffff;
-  border: 1px solid rgba(17,24,39,0.08);
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  animation: slideDown 0.2s ease-out;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  animation: slideDown 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
-/* Dropdown rows */
 .cr-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
+  padding: 11px 14px;
   text-decoration: none;
-  color: #111827;
-  border-radius: 6px;
-  transition: background-color 0.15s ease;
+  color: #1e293b;
+  border-radius: 8px;
+  transition: all 0.15s ease;
 }
 .cr-item:hover {
-  background-color: #f3f4f6;
+  background-color: #f8fafc; /* Slate 50 */
+}
+.cr-item:hover .cr-badge {
+  background-color: #4f46e5;
+  color: #ffffff;
 }
 .cr-item-left {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 .cr-item-num {
-  font-size: 12px;
-  font-weight: 800;
-  color: #9ca3af;
-  min-width: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  min-width: 18px;
+}
+/* Tiny decorative indicator dots replace the heavy colored lines */
+.cr-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
 }
 .cr-item-title {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
+  color: #0f172a;
 }
 .cr-item-sub {
   font-size: 13px;
-  color: #6b7280;
-  margin-left: 10px;
+  color: #64748b;
 }
 .cr-badge {
   font-size: 11px;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
-  color: #ffffff;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+  color: #475569;
+  transition: all 0.15s ease;
 }
-
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-6px); }
+  from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
 @media (max-width:560px){
-  .cr-summary{align-items:flex-start;flex-direction:column}
+  .cr-summary{align-items:flex-start;flex-direction:column; gap:12px}
   .cr-count{align-self:flex-start}
-  .cr-item-sub{display:none;} /* Hides subtext on small screens to fit cleanly */
+  .cr-item-sub{display:none;}
 }
 </style>
 
@@ -198,73 +209,81 @@ details[open] .cr-lead::after {
     <a href="{{site.baseurl}}/OOP" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">01</span>
+        <span class="cr-dot" style="background:#6366f1"></span>
         <span class="cr-item-title">OOP Architecture</span>
         <span class="cr-item-sub">— Classes, inheritance, methods</span>
       </div>
-      <span class="cr-badge" style="background:#534AB7">View</span>
+      <span class="cr-badge">Review</span>
     </a>
     
     <a href="{{site.baseurl}}/Control-Structures" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">02</span>
+        <span class="cr-dot" style="background:#10b981"></span>
         <span class="cr-item-title">Control Structures</span>
         <span class="cr-item-sub">— Loops, conditionals</span>
       </div>
-      <span class="cr-badge" style="background:#0F6E56">View</span>
+      <span class="cr-badge">Review</span>
     </a>
     
     <a href="{{site.baseurl}}/Data-Types" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">03</span>
+        <span class="cr-dot" style="background:#0ea5e9"></span>
         <span class="cr-item-title">Data Types</span>
         <span class="cr-item-sub">— Numbers, strings, arrays</span>
       </div>
-      <span class="cr-badge" style="background:#185FA5">View</span>
+      <span class="cr-badge">Review</span>
     </a>
     
     <a href="{{site.baseurl}}/operators" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">04</span>
+        <span class="cr-dot" style="background:#f59e0b"></span>
         <span class="cr-item-title">Operators</span>
         <span class="cr-item-sub">— Math, strings, booleans</span>
       </div>
-      <span class="cr-badge" style="background:#BA7517">View</span>
+      <span class="cr-badge">Review</span>
     </a>
     
     <a href="{{site.baseurl}}/Input-Output" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">05</span>
+        <span class="cr-dot" style="background:#ef4444"></span>
         <span class="cr-item-title">Input / Output</span>
         <span class="cr-item-sub">— Canvas, keyboard, API</span>
       </div>
-      <span class="cr-badge" style="background:#993C1D">View</span>
+      <span class="cr-badge">Review</span>
     </a>
     
     <a href="{{site.baseurl}}/Documentation" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">06</span>
+        <span class="cr-dot" style="background:#ec4899"></span>
         <span class="cr-item-title">Documentation</span>
         <span class="cr-item-sub">— JSDoc, mini-lessons</span>
       </div>
-      <span class="cr-badge" style="background:#993556">View</span>
+      <span class="cr-badge">Review</span>
     </a>
     
     <a href="{{site.baseurl}}/Debugging" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">07</span>
+        <span class="cr-dot" style="background:#84cc16"></span>
         <span class="cr-item-title">Debugging</span>
         <span class="cr-item-sub">— Console, DevTools, hitbox</span>
       </div>
-      <span class="cr-badge" style="background:#639922">View</span>
+      <span class="cr-badge">Review</span>
     </a>
     
     <a href="{{site.baseurl}}/Testing" class="cr-item">
       <div class="cr-item-left">
         <span class="cr-item-num">08</span>
+        <span class="cr-dot" style="background:#dc2626"></span>
         <span class="cr-item-title">Testing</span>
         <span class="cr-item-sub">— Gameplay, API, errors</span>
       </div>
-      <span class="cr-badge" style="background:#A32D2D">View</span>
+      <span class="cr-badge">Review</span>
     </a>
   </div>
 </details>
